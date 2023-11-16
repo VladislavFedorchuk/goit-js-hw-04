@@ -15,7 +15,7 @@ function calcAverageCalories(days) {
     
   }
   
-  return `${slac}`
+  return slac
 }
 console.log(
   calcAverageCalories([
