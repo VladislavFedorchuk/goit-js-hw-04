@@ -1,21 +1,25 @@
 function calcAverageCalories(days) {
 
-  let sum = 0
+  let averageCalories = 0
   
   for (const allcalories of days) {
 
-    sum += allcalories.calories
+    averageCalories += allcalories.calories
     
   }
-  let slac = sum / days.length
+  let totalCalories = averageCalories / days.length
+  
+  if (totalCalories <= averageCalories) {
+    
+    return totalCalories 
 
-  if (days >= sum) {
-    
-    return sum
-    
+  } else {
+
+    return averageCalories
+
   }
   
-  return slac
+  
 }
 console.log(
   calcAverageCalories([
