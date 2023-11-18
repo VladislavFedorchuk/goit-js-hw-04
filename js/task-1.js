@@ -2,9 +2,9 @@ function isEnoughCapacity(products, containerSize) {
     
   const productsValue = Object.values(products)
 
-  let Allproduct = productsValue[0] + productsValue[1] + productsValue[2]
+  let allproduct = productsValue[0] + productsValue[1] + productsValue[2]
 
-  if (Allproduct <= containerSize) {
+  if (allproduct <= containerSize) {
       return true
   } else {
       return false
